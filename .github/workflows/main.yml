@@ -1,13 +1,14 @@
 name: abdul shakoor
 
-on: 
- push: 
-  branches: [main] 
+on:
+  push:
+    branches:
+      - main
 
-  jobs:
-   demo:
-    runs-on: ubuntu-letest
+jobs:
+  demo:
+    runs-on: ubuntu-latest
 
     steps:
-     - name: Greetings
-       run : echo "hello world"
+      - name: Greetings
+        run: echo "hello world"
